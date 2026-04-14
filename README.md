@@ -24,6 +24,25 @@ Handles scan-based target detection, mob prioritization, intelligent movement, a
 
 ---
 
+## Known Issues & Planned Features
+
+Currently only written for the Graveyard.
+
+### Currently broken / not working
+- **Kill-during-flee edge case** — if a spell kills a mob while the hunter is
+  already fleeing, the kill is handled cleanly but the loot is skipped. Manual
+  looting required in this case.
+- **Per-character spell hit lines** — characters whose spells produce no
+  `You invoke` line (e.g. Dragon Dart) require an extra trigger. See the
+  setup section in `dgate_combat_spells.lua`.
+
+### Planned
+- **v6.0** — Pickpocket hunting mode
+- **Multi-zone support** — smarter navigation for larger hunting areas
+- **Loot filtering** — only pick up items above a configurable value
+
+---
+
 ## Files
 
 | File | Purpose |
